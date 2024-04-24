@@ -1,0 +1,9 @@
+FROM ruby:3.2.2
+
+WORKDIR /backend
+
+COPY Gemfile Gemfile.lock ./
+
+RUN bundle install
+
+EXPOSE 3000
